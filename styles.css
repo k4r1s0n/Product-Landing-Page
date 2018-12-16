@@ -20,6 +20,9 @@ header {
   color: #000;
   text-decoration: none;
   font-size: 2em;
+  @media (max-width: 1000px) {
+    font-size: 80%;
+  }
 }
 li {
   list-style: none;
@@ -94,7 +97,15 @@ footer {
   font-size: 1em;
 }
 @media (max-width: 800px) {
-  .input-field {
+  .input-field, textarea{
     width: 40%;
+  }
+  #products {
+    grid-gap: 5%;
+  }
+}
+@media (max-width: 1000px) {
+  .nav-link {
+    font-size: 80%;
   }
 }
