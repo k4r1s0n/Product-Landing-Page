@@ -27,3 +27,22 @@ ul {
   flex-direction: row;
   justify-content: space-around;
 }
+.container {
+  margin-top: 100px;
+}
+#products {
+  min-height: 300px;
+  width: 100%;
+  background:red;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 200px;
+}
+.item1, .item2, .item3 {
+  background:white;
+  text-align: center;
+}
+#support {
+  text-align: center;
+  margin-top: 100px;
+}
