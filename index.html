@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
   <title>Product Landing Page</title>
 </head>
 <body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <header id="header">
-    <img  id="header-img" src="images/logo.png" alt="logo">
+    <img  id="header-img" src="https://lh3.googleusercontent.com/-uHgKC_SjO1c/VRqp4ao23XI/AAAAAAAAABs/SdtAkSHF9Kc5HAzomcW1-BCBfY15cGj5ACJkCGAYYCw/w1082-h609-n-rw-no/albox-logo1.png" alt="logo">
     <nav id="nav-bar">
       <ul>
         <li><a class="nav-link" href="#products">Products</a></li>
@@ -19,64 +19,39 @@
       </ul>
     </nav>
   </header>
-  <section>
-  <div class="container">
-    <div id="products">
-      <div class="item1">
-        <img id="items" src="images/117-0-02_PI.jpeg" alt="item1">
-        <p>Model 127-0-02 Saddle Box,<br>Aluminum, Full Standard, 11.3 cu ft</p>
-      </div>
-      <div class="item2">
-        <img id="items" src="images/127-0-02_PI.jpeg" alt="item2">
-        <p>Model 117-0-02 Saddle Box,<br>Aluminum, Full Extra Wide, 15.3 cu ft</p>
-      </div>
-      <div class="item3">
-        <img id="items" src="images/174-0-01_PI.jpeg" alt="item3">
-        <p>Model 174-0-01 Lo-Side Box,<br>Aluminum, Standard, 4.1 cu ft</p>
-      </div>
+  <main>
+    <section id="products">
+    <div class="item1">
+      <img id="items" src="https://embed.widencdn.net/img/wernerco/r3jjsvzzat/150x150px/127-0-02_PI.jpeg?crop=no&u=qlpvmu" alt="item1">
+      <p>Model 127-0-02 Saddle Box,<br>Aluminum, Full Standard, 11.3 cu ft</p>
+    </div>
+    <div class="item2">
+      <img id="items" src="https://embed.widencdn.net/img/wernerco/k7miq4hiks/150x150px/117-0-02_PI.jpeg?crop=no&u=qlpvmu" alt="item2">
+      <p>Model 117-0-02 Saddle Box,<br>Aluminum, Full Extra Wide, 15.3 cu ft</p>
+    </div>
+    <div class="item3">
+      <img id="items" src="https://embed.widencdn.net/img/wernerco/tixcuf31ep/150x150px/174-0-01_PI.jpeg?crop=no&u=qlpvmu" alt="item3">
+      <p>Model 174-0-01 Lo-Side Box,<br>Aluminum, Standard, 4.1 cu ft</p>
     </div> 
-  </div> 
-  </section>
-  <section id="support">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vO99tcY4Jt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-  <section id="contact">
-    <p id="description">Contact us</p>
-    <form action="#" id="survey-form">
-      <div class="row">
-        <div class="left-el">
-          <label id="name-label" for="name">*Name:</label>
-        </div>
-        <div class="right-el">
-          <input type="text" id="name" placeholder="Enter your name" class="input-field" required><br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="left-el">
-          <label id="email-label" for="email">*Email:</label>
-        </div>
-        <div class="right-el">
-          <input type="email" id="email" placeholder="Enter your email" class="input-field" required>
-        </div>
-      </div>
-      <div class="row">
-          <div class="left-el">
-            <label for="comments">Any Comments or Suggestions?</label>
-          </div>
-          <div class="right-el">
-            <textarea id="comments" rows="4" cols="30" name="comment" placeholder="Enter your comment here..."></textarea>
-          </div>
-        </div>
-        <button id="submit" type="submit">Submit</button>
-    </form>
-  </section>
-  <footer>
-    <ul>
-      <li><a class="footer-link" href="#">Privacy</a></li>
-      <li><a class="footer-link" href="#">Terms</a></li>
-      <li><a class="footer-link" href="#">Contact</a></li>
-    </ul>
-    <span>Copyright 2018, Weather Guard</span>
-  </footer>
+    </section>
+    <section id="support">
+      <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/vO99tcY4Jt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="contact">
+      <p id="description">Contact us</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+        <input id="submit" type="submit" value="Get Started" class="btn"></input>
+      </form>
+    </section>
+    <footer>
+      <ul>
+        <li><a class="footer-link" href="#">Privacy</a></li>
+        <li><a class="footer-link" href="#">Terms</a></li>
+        <li><a class="footer-link" href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2018, Albox</span>
+    </footer>
+  </main>
 </body>
 </html>

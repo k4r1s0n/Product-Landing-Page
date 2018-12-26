@@ -1,7 +1,13 @@
+@import "https://fonts.googleapis.com/css?family=Cairo";
+
 body {
   background: red;
   font-family: 'Cairo', sans-serif;
-
+  text-align: center;
+}
+#header-img {
+  width: 20%;
+  height: 100%;
 }
 header {
   position: fixed;
@@ -12,49 +18,63 @@ header {
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
+  height: 90px;
+  left: 0px;
+  right: 0px;
 }
-#header-img {
-  width: 20%;
+main{
+  position: fixed;
+  top: 10%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height:90%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#nav-bar {
+  width: 30%;
 }
 .nav-link {
   color: #000;
   text-decoration: none;
   font-size: 2em;
 }
+
 li {
   list-style: none;
 }
 ul {
-  width: 35vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.container {
-  margin-top: 300px;
-}
 #products {
-  min-height: 300px;
-  width: 100%;
-  background: url(images/stainless-steel-chequered-sheet-250x250.jpg);
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 200px;
+  grid-gap: 10%;
+  padding: 10%;
+  padding-bottom: 0px;
 }
 .item1, .item2, .item3 {
+  width: 100%;
   background:white;
   text-align: center;
+  border: solid black;
+  border-radius: 10px;
 }
 #support {
   text-align: center;
-  margin-top: 100px;
+  padding-top: 10%;
 }
 #description {
   text-transform: uppercase;
 }
 #contact {
+  margin-top: 300px;
   background-color: #d9d9d9;
-  margin: 0 auto;
+  margin: 200px auto;
   border-radius: 10px;
   width: 75%;
   max-width: 900px;
@@ -62,23 +82,8 @@ ul {
   padding-top: 20px;
   text-align: center;
 }
-.left-el {
-  display: inline-block;
-  text-align: right;
-  width: 40%;
-  padding: 5px;
-  vertical-align: top;
-  margin-top: 10px;
-}
-.right-el {
-  display: inline-block;
-  text-align: left;
-  width: 48%;
-  padding: 5px;
-  margin-top: 10px;
-}
-.input-field {
-  width: 280px;
+#email {
+  width: 20%;
 }
 footer {
   display: flex;
@@ -94,15 +99,20 @@ footer {
   font-size: 1em;
 }
 @media (max-width: 800px) {
-  .input-field, textarea{
+  #email{
     width: 40%;
   }
   #products {
-    grid-gap: 5%;
+    display: block;
   }
-}
-@media (max-width: 1100px) {
+  header {
+    justify-content: center;
+  }
   .nav-link {
-    font-size: 80%;
+    font-size: 0.8em;
+  }
+  #nav-bar ul {
+    justify-content: space-around;
+    width: 150%;
   }
 }
