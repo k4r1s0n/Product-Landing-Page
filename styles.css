@@ -1,12 +1,16 @@
 @import "https://fonts.googleapis.com/css?family=Cairo";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: red;
   font-family: 'Cairo', sans-serif;
   text-align: center;
 }
 #header-img {
-  width: 20%;
   height: 100%;
 }
 header {
@@ -18,13 +22,13 @@ header {
   justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  height: 90px;
+  height: 15%;
   left: 0px;
   right: 0px;
 }
 main{
   position: fixed;
-  top: 10%;
+  top: 15%;
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -33,7 +37,7 @@ main{
   overflow-x:hidden;
 }
 #nav-bar {
-  width: 30%;
+  width: 50%;
 }
 .nav-link {
   color: #000;
@@ -106,13 +110,24 @@ footer {
     display: block;
   }
   header {
-    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+  }
+  #header-img {
+    height: 50%;
+    width: 8em;
   }
   .nav-link {
     font-size: 0.8em;
   }
   #nav-bar ul {
     justify-content: space-around;
-    width: 150%;
+    width: 100%;
+  }
+  main {
+    top: 20%;
   }
 }
